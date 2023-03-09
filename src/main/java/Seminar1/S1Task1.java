@@ -1,4 +1,7 @@
-package Seminar1;
+//1. Задать одномерный массив и найти в нем минимальный и максимальный элементы
+
+
+        package Seminar1;
 
 import java.util.Random;
 
