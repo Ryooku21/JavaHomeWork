@@ -6,12 +6,33 @@ public class S1Task1 {
     public static void main(String[] args) {
         int[] array = new int[10];
         Random random = new Random();
-        System.out.println("Array with randomly generated numbers from 1 to 10: ");
+        System.out.println("Array with randomly generated numbers from 0 to 9: ");
         System.out.print("[ ");
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(10);
             System.out.print(array[i] + " ");
         }
-        System.out.print("]");
+        System.out.println("]");
+        System.out.println();
+        System.out.println("Max value in array = " + FindMax(array));
+        System.out.println("Min value in array = " + FindMin(array));
+    }
+    public static int FindMax(int[] arr) {
+        int max = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    public static int FindMin(int[] arr) {
+        int min = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
     }
 }
