@@ -19,18 +19,18 @@ public class S1Task1 {
     }
     public static int FindMax(int[] arr) {
         int max = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
+        for (int j : arr) {
+            if (j > max) {
+                max = j;
             }
         }
         return max;
     }
     public static int FindMin(int[] arr) {
         int min = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
+        for (int j : arr) {
+            if (j < min) {
+                min = j;
             }
         }
         return min;
